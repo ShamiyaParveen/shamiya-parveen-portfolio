@@ -10,7 +10,7 @@ const profile = {
     'I create fast, user-friendly interfaces using React, JavaScript, and modern web technologies, focusing on clean code and seamless user experience.',
   linkedin: 'https://www.linkedin.com/in/shamiya-parveen-123196232/',
   github: 'https://github.com/ShamiyaParveen',
-  resume: '#',
+  resume: '/shamiya Ansari resume.pdf',
 }
 
 const aboutPoints = [
@@ -141,7 +141,9 @@ function App() {
             <li>
               <span>Resume</span>
               <strong>
-                <a href={profile.resume}>Attach your PDF link</a>
+                <a href={profile.resume} target="_blank" rel="noreferrer">
+                  View Resume
+                </a>
               </strong>
             </li>
           </ul>
