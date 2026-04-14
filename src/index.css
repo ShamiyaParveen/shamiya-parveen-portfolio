@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --bg: #ffffff;
+  --panel: #ffffff;
+  --panel-dark: #1f2328;
+  --text: #1d1d1d;
+  --text-h: #111111;
+  --border: #111111;
+  --border-soft: #dcdcdc;
+  --accent: #111111;
+  --soft-accent: #f3f3f3;
+  --chip-bg: #f7f7f7;
+  --muted-strong: #555555;
+  --shadow: none;
+  --sans: 'Crimson Pro', Georgia, serif;
+  --heading: 'Crimson Pro', Georgia, serif;
+  --mono: 'JetBrains Mono', monospace;
+  font: 18px/1.65 var(--sans);
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  border-radius: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--bg);
+}
+
+a {
+  color: inherit;
+}
+
+#root {
+  width: min(1180px, calc(100% - 2rem));
+  margin: 0 auto;
+  min-height: 100svh;
+  padding: 2.5rem 0 4rem;
+  position: relative;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading);
+  color: var(--text-h);
+  line-height: 1.12;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+h1 {
+  font-size: clamp(2.8rem, 5vw, 4.3rem);
+  margin: 0 0 1rem;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+h2 {
+  font-size: clamp(1.8rem, 3vw, 2.35rem);
+  margin: 0 0 1rem;
+}
+
+h3 {
+  font-size: 1.45rem;
+}
+
+p {
+  margin: 0;
+}
+
+@media (max-width: 720px) {
+  :root {
+    font-size: 16px;
+  }
+
+  #root {
+    width: min(100% - 1rem, 1180px);
+    padding-top: 1.2rem;
+  }
+}
