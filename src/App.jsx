@@ -2,7 +2,7 @@ import './App.css'
 
 const profile = {
   name: 'Shamiya Parveen',
-  title: 'Front-End Developer',
+  title: 'Front-End Developer | React.js Specialist ',
   location: 'India',
   email: 'shamiya9922@gmail.com',
   summary: 'Building scalable, responsive web applications with modern UI/UX.',
@@ -38,6 +38,66 @@ const skillGroups = [
   },
 ]
 
+const qualifications = [
+  {
+    institute: 'Abeda Inamdar Senior College, Pune',
+    course: 'B.Sc. Information Technology',
+    duration: '2017 - 2020',
+    score: '80.26%',
+  },
+  {
+    institute: 'Abeda Inamdar Junior College, Pune',
+    course: 'Class 12 (Science)',
+    duration: '2016 - 2017',
+    score: '61.38%',
+  },
+  {
+    institute: 'Imperial Public School, Bihar',
+    course: 'Class 10',
+    duration: '2014 - 2015',
+    score: '8.8 CGPA',
+  },
+]
+
+const experiences = [
+  {
+    company: 'Westonik Solutions Pvt. Ltd.',
+    role: 'Frontend Developer',
+    duration: 'Nov 2024 - Present',
+    location: 'Prayagraj, India',
+    points: [
+      'Developed and maintained 12+ responsive websites using HTML, CSS, Bootstrap, and WordPress.',
+      'Converted Figma designs into pixel-perfect UI improving user experience.',
+      'Optimized website performance, SEO, and cross-browser compatibility.',
+      'Built reusable UI components and scalable frontend structures.',
+      'Collaborated with designers and stakeholders to deliver production-ready solutions.',
+    ],
+  },
+  {
+    company: 'Westonik Solutions Pvt. Ltd.',
+    role: 'Frontend Developer Intern',
+    duration: 'Aug 2024 - Nov 2024',
+    location: 'Prayagraj, India',
+    points: [
+      'Built responsive UI components and layouts using HTML, CSS, and Bootstrap.',
+      'Worked on real client projects improving frontend responsiveness.',
+      'Assisted in WordPress development and UI customization.',
+    ],
+  },
+  {
+    company: 'Edera - Pune',
+    role: 'WordPress Developer Intern',
+    duration: 'Mar 2023 - Jun 2023',
+    location: 'Remote',
+    points: [
+      'Developed and customized WordPress websites using Elementor and WooCommerce.',
+      'Improved UI/UX and responsiveness across devices.',
+      'Implemented SEO and performance optimization techniques.',
+      'Collaborated with team members to deliver client-based projects.',
+    ],
+  },
+]
+
 const projects = [
   {
     title: 'Netflix Clone',
@@ -50,8 +110,7 @@ const projects = [
       'Created smooth navigation and user-friendly browsing experience.',
     ],
     stack: ['React.js', 'Firebase', 'OMDB API', 'JavaScript', 'CSS'],
-    liveLink:
-      'https://netflix-clone-react-firebase-iiyrg0el7-shamiyaparveens-projects.vercel.app/',
+    liveLink: 'https://netflix-clone-react-firebase-phi.vercel.app/',
     githubLink: 'https://github.com/ShamiyaParveen/netflix-clone-react-firebase',
   },
   {
@@ -90,10 +149,34 @@ const highlights = [
   'Focused on clean code and reusable component design.',
 ]
 
+const navLinks = [
+  { label: 'Home', href: '#home' },
+  { label: 'About', href: '#about' },
+  { label: 'Skills', href: '#skills' },
+  { label: 'Qualification', href: '#qualification' },
+  { label: 'Experience', href: '#experience' },
+  { label: 'Projects', href: '#projects' },
+  { label: 'Highlights', href: '#highlights' },
+  { label: 'Contact', href: '#contact' },
+]
+
 function App() {
   return (
     <main className="portfolio-shell">
-      <section className="hero-section">
+      <header className="site-header">
+        <a href="#home" className="site-logo">
+          {profile.name}
+        </a>
+        <nav className="site-nav" aria-label="Portfolio sections">
+          {navLinks.map((link) => (
+            <a href={link.href} key={link.href}>
+              {link.label}
+            </a>
+          ))}
+        </nav>
+      </header>
+
+      <section className="hero-section" id="home">
         <div className="hero-copy">
           <p className="eyebrow">Resume Portfolio</p>
           <h1>{profile.name}</h1>
@@ -151,7 +234,7 @@ function App() {
       </section>
 
       <section className="content-grid">
-        <div className="panel">
+        <div className="panel" id="about">
           <p className="section-tag">About</p>
           <h2>About</h2>
           <div className="about-list">
@@ -161,7 +244,7 @@ function App() {
           </div>
         </div>
 
-        <div className="panel">
+        <div className="panel" id="skills">
           <p className="section-tag">Skills</p>
           <h2>Skills</h2>
           <div className="skill-groups">
@@ -178,6 +261,53 @@ function App() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="qualification-section" id="qualification">
+        <div className="section-heading">
+          <p className="section-tag">Education</p>
+          <h2>Qualification</h2>
+        </div>
+
+        <div className="qualification-grid">
+          {qualifications.map((qualification) => (
+            <article className="qualification-card" key={qualification.course}>
+              <p className="qualification-duration">
+                {qualification.duration}
+              </p>
+              <h3>{qualification.course}</h3>
+              <p>{qualification.institute}</p>
+              <strong>{qualification.score}</strong>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="experience-section" id="experience">
+        <div className="section-heading experience-heading">
+          <div>
+            <p className="section-tag">Work</p>
+            <h2>Experience</h2>
+          </div>
+          <strong className="experience-total">2 Year 3 Month</strong>
+        </div>
+
+        <div className="experience-grid">
+          {experiences.map((experience) => (
+            <article className="experience-card" key={experience.role}>
+              <p className="experience-duration">{experience.duration}</p>
+              <h3>{experience.role}</h3>
+              <p className="experience-company">
+                {experience.company} | {experience.location}
+              </p>
+              <ul className="project-points">
+                {experience.points.map((point) => (
+                  <li key={point}>{point}</li>
+                ))}
+              </ul>
+            </article>
+          ))}
         </div>
       </section>
 
@@ -221,7 +351,7 @@ function App() {
         </div>
       </section>
 
-      <section className="content-grid highlights-section">
+      <section className="content-grid highlights-section" id="highlights">
         <div className="panel">
           <p className="section-tag">Highlights</p>
           <h2>Highlights</h2>
@@ -233,7 +363,7 @@ function App() {
         </div>
       </section>
 
-      <section className="contact-strip">
+      <section className="contact-strip" id="contact">
         <div>
           <p className="section-tag">Contact</p>
           <h2>Available for Freelance Work &amp; Full-Time Opportunities</h2>
