@@ -63,27 +63,20 @@ const experiences = [
   {
     company: 'Westonik Solutions Pvt. Ltd.',
     role: 'Frontend Developer',
-    duration: 'Nov 2024 - Present',
+    duration: 'Ju;y 2024 - Present',
     location: 'Prayagraj, India',
-    points: [
-      'Developed and maintained 12+ responsive websites using HTML, CSS, Bootstrap, and WordPress.',
-      'Converted Figma designs into pixel-perfect UI improving user experience.',
-      'Optimized website performance, SEO, and cross-browser compatibility.',
-      'Built reusable UI components and scalable frontend structures.',
-      'Collaborated with designers and stakeholders to deliver production-ready solutions.',
-    ],
+  points: [
+  'Developed and maintained 12+ responsive websites using HTML5, CSS3, Bootstrap, WordPress and Shopify.',
+  'Converted Figma designs into pixel-perfect, responsive user interfaces with excellent user experience.',
+  'Built reusable UI components and scalable frontend structures using JavaScript and React.js.',
+  'Optimized website performance, SEO, page loading speed, and cross-browser compatibility.',
+  'Customized WordPress themes, plugins, Elementor pages, and WooCommerce features based on client requirements.',
+  'Developed and managed Shopify stores by customizing themes, product pages, collections, and responsive layouts.',
+  'Ensured responsive design across desktop, tablet, and mobile devices using Bootstrap and Tailwind CSS.',
+  'Collaborated with designers, project managers, and clients to deliver production-ready solutions within deadlines.',
+],
   },
-  {
-    company: 'Westonik Solutions Pvt. Ltd.',
-    role: 'Frontend Developer Intern',
-    duration: 'Aug 2024 - Nov 2024',
-    location: 'Prayagraj, India',
-    points: [
-      'Built responsive UI components and layouts using HTML, CSS, and Bootstrap.',
-      'Worked on real client projects improving frontend responsiveness.',
-      'Assisted in WordPress development and UI customization.',
-    ],
-  },
+
   {
     company: 'Edera - Pune',
     role: 'WordPress Developer Intern',
@@ -290,7 +283,7 @@ function App() {
             <p className="section-tag">Work</p>
             <h2>Experience</h2>
           </div>
-          <strong className="experience-total">2 Year 3 Month</strong>
+          <strong className="experience-total">2+ Years of Experience</strong>
         </div>
 
         <div className="experience-grid">
