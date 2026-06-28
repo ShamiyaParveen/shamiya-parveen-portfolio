@@ -7,7 +7,7 @@ const profile = {
   email: 'shamiya9922@gmail.com',
   summary: 'Building scalable, responsive web applications with modern UI/UX.',
   about:
-    'I create fast, user-friendly interfaces using React, JavaScript, and modern web technologies, focusing on clean code and seamless user experience.',
+    'Frontend Developer with 2+ years of experience building responsive and scalable web applications using React.js, JavaScript, WordPress, Shopify, Bootstrap, and Tailwind CSS. Passionate about creating fast, accessible, and user-friendly digital experiences.',
   linkedin: 'https://www.linkedin.com/in/shamiya-parveen-123196232/',
   github: 'https://github.com/ShamiyaParveen',
   resume: '/shamiya Ansari resume.pdf',
@@ -27,6 +27,10 @@ const skillGroups = [
   {
     title: 'UI Libraries & Styling',
     items: ['Tailwind CSS', 'Bootstrap', 'Material UI'],
+  },
+     {
+    title: 'CMS',
+    items: ['WordPress', 'Shopify'],
   },
   {
     title: 'Tools & Platforms',
