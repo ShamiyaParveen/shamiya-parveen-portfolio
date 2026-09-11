@@ -2,43 +2,55 @@ import './App.css'
 
 const profile = {
   name: 'Shamiya Parveen',
-  title: 'Front-End Developer | React.js Specialist ',
+  title: 'Frontend Developer',
   location: 'India',
   email: 'shamiya9922@gmail.com',
-  summary: 'Building scalable, responsive web applications with modern UI/UX.',
+  phone: '+91 60032 92822',
+  summary:
+    'Frontend Developer with 2+ years of experience building responsive, production-grade web applications using React.js, JavaScript, HTML5, CSS3, Bootstrap, and Tailwind CSS.',
   about:
-    'Frontend Developer with 2+ years of experience building responsive and scalable web applications using React.js, JavaScript, WordPress, Shopify, Bootstrap, and Tailwind CSS. Passionate about creating fast, accessible, and user-friendly digital experiences.',
-  linkedin: 'https://www.linkedin.com/in/shamiya-parveen-123196232/',
+    'Skilled in developing reusable UI components, integrating REST APIs, and delivering pixel-perfect, cross-device interfaces from Figma designs. Also experienced in building and customizing WordPress, Elementor, WooCommerce, and Shopify websites.',
+  linkedin:
+    'https://www.linkedin.com/in/shamiya-parveen-123196232/',
   github: 'https://github.com/ShamiyaParveen',
-  resume: '/shamiya Ansari resume.pdf',
+  resume: '/shamiya-parveen-resume.pdf',
 }
 
 const aboutPoints = [
-  'I am a passionate Front-End Developer with hands-on experience in building real-world web applications including ecommerce platforms and streaming apps.',
-  'I specialize in React.js, JavaScript, and API integration, with a strong focus on responsive design and reusable component-based architecture.',
-  'I enjoy turning ideas into interactive, user-friendly interfaces and continuously improving my skills to build high-quality web experiences.',
+  'I build responsive, production-grade web applications using React.js, JavaScript, HTML5, CSS3, Bootstrap, and Tailwind CSS.',
+  'I develop reusable UI components, integrate REST APIs, and convert Figma designs into pixel-perfect, cross-device interfaces.',
+  'I also build and customize WordPress websites using Elementor, WooCommerce, custom themes, and Custom Post Types.',
+  'I have experience working on ecommerce, corporate, portfolio, real estate, restaurant, booking, job portal, and blog/news websites.',
+  'I also developed and customized a responsive Shopify ecommerce website with product listings, collections, navigation, and user-friendly layouts.',
 ]
 
 const skillGroups = [
   {
-    title: 'Frontend',
-    items: ['React.js', 'JavaScript (ES6+)', 'HTML5', 'CSS3'],
+    title: 'Languages & Frameworks',
+    items: ['JavaScript', 'React.js', 'HTML5', 'CSS3'],
   },
   {
-    title: 'UI Libraries & Styling',
-    items: ['Tailwind CSS', 'Bootstrap', 'Material UI'],
-  },
-     {
-    title: 'CMS',
-    items: ['WordPress', 'Shopify'],
+    title: 'Styling & UI',
+    items: ['Bootstrap', 'Tailwind CSS'],
   },
   {
-    title: 'Tools & Platforms',
-    items: ['Git', 'GitHub', 'Firebase', 'Vercel'],
+    title: 'CMS & Ecommerce',
+    items: [
+      'WordPress',
+      'Elementor',
+      'WooCommerce',
+      'Custom Post Types',
+      'Shopify',
+    ],
   },
   {
-    title: 'Concepts',
-    items: ['Responsive Design', 'API Integration', 'Component-Based Architecture'],
+    title: 'Other',
+    items: [
+      'API Integration',
+      'Firebase',
+      'Responsive / Mobile-First Design',
+      'Figma to Code',
+    ],
   },
 ]
 
@@ -49,48 +61,31 @@ const qualifications = [
     duration: '2017 - 2020',
     score: '80.26%',
   },
-  {
-    institute: 'Abeda Inamdar Junior College, Pune',
-    course: 'Class 12 (Science)',
-    duration: '2016 - 2017',
-    score: '61.38%',
-  },
-  {
-    institute: 'Imperial Public School, Bihar',
-    course: 'Class 10',
-    duration: '2014 - 2015',
-    score: '8.8 CGPA',
-  },
 ]
 
 const experiences = [
   {
     company: 'Westonik Solutions Pvt. Ltd.',
     role: 'Frontend Developer',
-    duration: 'Ju;y 2024 - Present',
+    duration: 'Jul 2024 - Jul 2026',
     location: 'Prayagraj, India',
-  points: [
-  'Developed and maintained 12+ responsive websites using HTML5, CSS3, Bootstrap, WordPress and Shopify.',
-  'Converted Figma designs into pixel-perfect, responsive user interfaces with excellent user experience.',
-  'Built reusable UI components and scalable frontend structures using JavaScript and React.js.',
-  'Optimized website performance, SEO, page loading speed, and cross-browser compatibility.',
-  'Customized WordPress themes, plugins, Elementor pages, and WooCommerce features based on client requirements.',
-  'Developed and managed Shopify stores by customizing themes, product pages, collections, and responsive layouts.',
-  'Ensured responsive design across desktop, tablet, and mobile devices using Bootstrap and Tailwind CSS.',
-  'Collaborated with designers, project managers, and clients to deliver production-ready solutions within deadlines.',
-],
+    points: [
+      'Developed responsive, reusable UI components and page structures using React.js, JavaScript, HTML5, CSS3, and Bootstrap across desktop, tablet, and mobile breakpoints.',
+      'Converted Figma designs into pixel-perfect, cross-browser interfaces with a focus on usability and layout consistency.',
+      'Built and customized WordPress websites using Elementor, WooCommerce, custom themes, and Custom Post Types for ecommerce, corporate, portfolio, real estate, restaurant, booking, job portal, and blog/news clients.',
+      'Collaborated with designers and backend teams to integrate APIs and ship client projects on schedule.',
+      'Independently developed and customized a responsive Shopify ecommerce website with product listings, collections, navigation, and user-friendly layouts.',
+    ],
   },
-
   {
-    company: 'Edera - Pune',
+    company: 'Edera India',
     role: 'WordPress Developer Intern',
     duration: 'Mar 2023 - Jun 2023',
-    location: 'Remote',
+    location: 'Remote - Pune',
     points: [
-      'Developed and customized WordPress websites using Elementor and WooCommerce.',
-      'Improved UI/UX and responsiveness across devices.',
-      'Implemented SEO and performance optimization techniques.',
-      'Collaborated with team members to deliver client-based projects.',
+      'Developed and customized WordPress websites using Elementor, improving UI/UX consistency and cross-device responsiveness.',
+      'Implemented on-page SEO and performance-optimization techniques to improve load times and search visibility.',
+      'Collaborated with the team to deliver client-based projects on schedule.',
     ],
   },
 ]
@@ -98,52 +93,37 @@ const experiences = [
 const projects = [
   {
     title: 'Netflix Clone',
-    subtitle: 'React + Firebase',
-    points: [
-      'Built a Netflix-inspired streaming web application using React and Vite.',
-      'Implemented user authentication using Firebase Auth.',
-      'Integrated OMDB API to fetch and display dynamic movie data.',
-      'Designed fully responsive UI for mobile, tablet, and desktop.',
-      'Created smooth navigation and user-friendly browsing experience.',
-    ],
-    stack: ['React.js', 'Firebase', 'OMDB API', 'JavaScript', 'CSS'],
-    liveLink: 'https://netflix-clone-react-firebase-phi.vercel.app/',
-    githubLink: 'https://github.com/ShamiyaParveen/netflix-clone-react-firebase',
+    subtitle: 'React.js, JavaScript, Firebase',
+    description:
+      'Built a Netflix-inspired streaming UI with Firebase authentication and dynamic movie data via third-party API integration.',
+    stack: ['React.js', 'JavaScript', 'Firebase'],
+    liveLink:
+      'https://netflix-clone-react-firebase-phi.vercel.app/',
+    githubLink:
+      'https://github.com/ShamiyaParveen/netflix-clone-react-firebase',
   },
   {
-    title: 'Zoobiya E-Commerce Frontend',
-    subtitle: 'Responsive ecommerce frontend',
-    points: [
-      'Developed a responsive ecommerce frontend using React and Vite.',
-      'Implemented product listing, category filtering, and search functionality.',
-      'Designed cart system UI and product detail pages.',
-      'Integrated REST APIs for dynamic data rendering.',
-      'Used Material UI and Bootstrap for modern UI components.',
-    ],
-    stack: ['React.js', 'REST API', 'Material UI', 'Bootstrap', 'JavaScript'],
-    liveLink: 'https://zoobiya-ecommerce-frontend.vercel.app/',
-    githubLink: 'https://github.com/ShamiyaParveen/zoobiya-ecommerce-frontend',
+    title: 'E-Commerce Website',
+    subtitle: 'React.js, JavaScript, HTML5, CSS3',
+    description:
+      'Built a responsive ecommerce frontend with product listing, search, filtering, and a localStorage-based shopping cart.',
+    stack: ['React.js', 'JavaScript', 'HTML5', 'CSS3'],
+    liveLink:
+      'https://zoobiya-ecommerce-frontend.vercel.app/',
+    githubLink:
+      'https://github.com/ShamiyaParveen/zoobiya-ecommerce-frontend',
   },
   {
-    title: 'University Landing Page',
-    subtitle: 'Single-page educational website',
-    points: [
-      'Created a responsive single-page educational website using React.',
-      'Built structured sections including hero, courses, testimonials, and contact.',
-      'Implemented clean UI with smooth scrolling and responsive design.',
-      'Focused on reusable components and modern layout.',
-    ],
-    stack: ['React.js', 'Vite', 'HTML', 'CSS'],
-    liveLink: 'https://single-page-website-react.vercel.app/',
-    githubLink: 'https://github.com/ShamiyaParveen/single-page-website-react',
+    title: 'Single Page Website',
+    subtitle: 'React.js, Vite, HTML5, CSS3',
+    description:
+      'Built a responsive single-page application using reusable React.js components, with Web3Forms contact integration and video modal functionality.',
+    stack: ['React.js', 'Vite', 'HTML5', 'CSS3'],
+    liveLink:
+      'https://single-page-website-react.vercel.app/',
+    githubLink:
+      'https://github.com/ShamiyaParveen/single-page-website-react',
   },
-]
-
-const highlights = [
-  'Built 3+ real-world frontend projects using React.js.',
-  'Strong understanding of API integration and dynamic data handling.',
-  'Experienced in building responsive and user-friendly interfaces.',
-  'Focused on clean code and reusable component design.',
 ]
 
 const navLinks = [
@@ -153,7 +133,6 @@ const navLinks = [
   { label: 'Qualification', href: '#qualification' },
   { label: 'Experience', href: '#experience' },
   { label: 'Projects', href: '#projects' },
-  { label: 'Highlights', href: '#highlights' },
   { label: 'Contact', href: '#contact' },
 ]
 
@@ -162,8 +141,9 @@ function App() {
     <main className="portfolio-shell">
       <header className="site-header">
         <a href="#home" className="site-logo">
-          {profile.name}
+          Shamiya Parveen
         </a>
+
         <nav className="site-nav" aria-label="Portfolio sections">
           {navLinks.map((link) => (
             <a href={link.href} key={link.href}>
@@ -173,17 +153,28 @@ function App() {
         </nav>
       </header>
 
+      {/* HERO */}
       <section className="hero-section" id="home">
         <div className="hero-copy">
-          <p className="eyebrow">Resume Portfolio</p>
+          <p className="eyebrow">Frontend Developer</p>
+
           <h1>{profile.name}</h1>
+
           <p className="hero-title">{profile.title}</p>
-          <p className="hero-summary">{profile.summary}</p>
-          <p className="hero-summary">{profile.about}</p>
+
+          <p className="hero-summary">
+            {profile.summary}
+          </p>
+
+          <p className="hero-summary">
+            {profile.about}
+          </p>
+
           <div className="hero-actions">
             <a href="#projects" className="primary-button">
               View Projects
             </a>
+
             <a
               href={profile.linkedin}
               className="secondary-button"
@@ -192,6 +183,7 @@ function App() {
             >
               LinkedIn
             </a>
+
             <a
               href={profile.github}
               className="secondary-button"
@@ -200,40 +192,56 @@ function App() {
             >
               GitHub
             </a>
+
+            <a
+              href={profile.resume}
+              className="secondary-button"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View Resume
+            </a>
           </div>
         </div>
 
         <aside className="hero-card">
           <p className="card-label">Quick Info</p>
+
           <ul className="info-list">
             <li>
               <span>Role</span>
               <strong>{profile.title}</strong>
             </li>
+
+            <li>
+              <span>Experience</span>
+              <strong>2+ Years</strong>
+            </li>
+
             <li>
               <span>Location</span>
               <strong>{profile.location}</strong>
             </li>
+
             <li>
               <span>Email</span>
               <strong>{profile.email}</strong>
             </li>
+
             <li>
-              <span>Resume</span>
-              <strong>
-                <a href={profile.resume} target="_blank" rel="noreferrer">
-                  View Resume
-                </a>
-              </strong>
+              <span>Phone</span>
+              <strong>{profile.phone}</strong>
             </li>
           </ul>
         </aside>
       </section>
 
+      {/* ABOUT + SKILLS */}
       <section className="content-grid">
         <div className="panel" id="about">
           <p className="section-tag">About</p>
-          <h2>About</h2>
+          <h2>About Me</h2>
+
           <div className="about-list">
             {aboutPoints.map((point) => (
               <p key={point}>{point}</p>
@@ -243,11 +251,13 @@ function App() {
 
         <div className="panel" id="skills">
           <p className="section-tag">Skills</p>
-          <h2>Skills</h2>
+          <h2>Technical Skills</h2>
+
           <div className="skill-groups">
             {skillGroups.map((group) => (
               <div key={group.title} className="skill-group">
                 <p className="group-title">{group.title}</p>
+
                 <div className="skill-list">
                   {group.items.map((skill) => (
                     <span key={skill} className="skill-pill">
@@ -261,7 +271,11 @@ function App() {
         </div>
       </section>
 
-      <section className="qualification-section" id="qualification">
+      {/* QUALIFICATION */}
+      <section
+        className="qualification-section"
+        id="qualification"
+      >
         <div className="section-heading">
           <p className="section-tag">Education</p>
           <h2>Qualification</h2>
@@ -269,35 +283,53 @@ function App() {
 
         <div className="qualification-grid">
           {qualifications.map((qualification) => (
-            <article className="qualification-card" key={qualification.course}>
+            <article
+              className="qualification-card"
+              key={qualification.course}
+            >
               <p className="qualification-duration">
                 {qualification.duration}
               </p>
+
               <h3>{qualification.course}</h3>
+
               <p>{qualification.institute}</p>
+
               <strong>{qualification.score}</strong>
             </article>
           ))}
         </div>
       </section>
 
+      {/* EXPERIENCE */}
       <section className="experience-section" id="experience">
         <div className="section-heading experience-heading">
           <div>
             <p className="section-tag">Work</p>
             <h2>Experience</h2>
           </div>
-          <strong className="experience-total">2+ Years of Experience</strong>
+
+          <strong className="experience-total">
+            2+ Years of Experience
+          </strong>
         </div>
 
         <div className="experience-grid">
           {experiences.map((experience) => (
-            <article className="experience-card" key={experience.role}>
-              <p className="experience-duration">{experience.duration}</p>
+            <article
+              className="experience-card"
+              key={`${experience.company}-${experience.role}`}
+            >
+              <p className="experience-duration">
+                {experience.duration}
+              </p>
+
               <h3>{experience.role}</h3>
+
               <p className="experience-company">
                 {experience.company} | {experience.location}
               </p>
+
               <ul className="project-points">
                 {experience.points.map((point) => (
                   <li key={point}>{point}</li>
@@ -308,39 +340,55 @@ function App() {
         </div>
       </section>
 
+      {/* PROJECTS */}
       <section className="projects-section" id="projects">
         <div className="section-heading">
-          <p className="section-tag">Projects</p>
+          <p className="section-tag">Portfolio</p>
           <h2>Projects</h2>
         </div>
 
         <div className="projects-grid">
           {projects.map((project) => (
-            <article className="project-card" key={project.title}>
-              <p className="project-type">{project.subtitle}</p>
+            <article
+              className="project-card"
+              key={project.title}
+            >
+              <p className="project-type">
+                {project.subtitle}
+              </p>
+
               <h3>{project.title}</h3>
-              <ul className="project-points">
-                {project.points.map((point) => (
-                  <li key={point}>{point}</li>
-                ))}
-              </ul>
+
+              <p className="project-description">
+                {project.description}
+              </p>
+
               <div className="stack-list">
                 {project.stack.map((item) => (
-                  <span key={item} className="stack-pill">
+                  <span
+                    key={item}
+                    className="stack-pill"
+                  >
                     {item}
                   </span>
                 ))}
               </div>
+
               <div className="project-links">
-                <a href={project.liveLink} target="_blank" rel="noreferrer">
-                  Live Demo
+                <a
+                  href={project.liveLink}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Live Demo ↗
                 </a>
+
                 <a
                   href={project.githubLink}
                   target="_blank"
                   rel="noreferrer"
                 >
-                  GitHub Repo
+                  GitHub Repo ↗
                 </a>
               </div>
             </article>
@@ -348,33 +396,43 @@ function App() {
         </div>
       </section>
 
-      <section className="content-grid highlights-section" id="highlights">
-        <div className="panel">
-          <p className="section-tag">Highlights</p>
-          <h2>Highlights</h2>
-          <ul className="project-points">
-            {highlights.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
+      {/* CONTACT */}
       <section className="contact-strip" id="contact">
         <div>
           <p className="section-tag">Contact</p>
-          <h2>Available for Freelance Work &amp; Full-Time Opportunities</h2>
+
+          <h2>Let's Connect</h2>
+
           <p className="contact-note">
-            Currently seeking Front-End Developer opportunities where I can
-            contribute and grow as a developer.
+            Feel free to reach out by phone, email, LinkedIn,
+            or GitHub.
           </p>
         </div>
+
         <div className="contact-links">
-          <a href={`mailto:${profile.email}`}>{profile.email}</a>
-          <a href={profile.linkedin} target="_blank" rel="noreferrer">
+          <a
+            href={`tel:${profile.phone.replaceAll(' ', '')}`}
+          >
+            {profile.phone}
+          </a>
+
+          <a href={`mailto:${profile.email}`}>
+            {profile.email}
+          </a>
+
+          <a
+            href={profile.linkedin}
+            target="_blank"
+            rel="noreferrer"
+          >
             LinkedIn
           </a>
-          <a href={profile.github} target="_blank" rel="noreferrer">
+
+          <a
+            href={profile.github}
+            target="_blank"
+            rel="noreferrer"
+          >
             GitHub
           </a>
         </div>
